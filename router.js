@@ -2,7 +2,7 @@ const axios = require('axios')
 const router = require('express').Router()
 
 // 获取轮播图数据
-router.get('/swiper', async (req, res) => {
+router.get('/recommend/swiper', async (req, res) => {
   let data = await axios({
     method: 'get',
     url: 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg',
