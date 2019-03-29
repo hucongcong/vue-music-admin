@@ -1,5 +1,6 @@
 const express = require('express')
-const router = require('./router')
+const recommend = require('./routes/recommend')
+const singer = require('./routes/singer')
 const app = express()
 // 跨域支持
 app.use((req, res, next) => {
@@ -13,7 +14,8 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use(router)
+app.use('/recommend', recommend)
+app.use('/singer', singer)
 
 app.listen(3000, () => {
   console.log('app音乐服务器启动成功了')

@@ -106,3 +106,41 @@
   }
 }
 ```
+
+## 获取歌手列表数据
+
+- 请求地址： `/singer/list`
+- 请求方式：`get`
+- 请求参数：无
+- 响应示例
+
+```json
+{
+  "code": 0,
+  "data": {
+    "list": [
+      {
+        "Farea": "1",
+        "Fattribute_3": "3",
+        "Fattribute_4": "0",
+        "Fgenre": "0",
+        "Findex": "X",
+        "Fother_name": "Joker",
+        "Fsinger_id": "5062",
+        "Fsinger_mid": "002J4UUk29y8BY",
+        "Fsinger_name": "薛之谦",
+        "Fsinger_tag": "541,555",
+        "Fsort": "1",
+        "Ftrend": "0",
+        "Ftype": "0",
+        "voc": "0"
+      }
+    ],
+    "per_page": 100,
+    "total": 552503,
+    "total_page": 5526
+  },
+  "message": "succ",
+  "subcode": 0
+}
+```

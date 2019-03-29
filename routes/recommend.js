@@ -2,7 +2,7 @@ const axios = require('axios')
 const router = require('express').Router()
 
 // 获取轮播图数据
-router.get('/recommend/swiper', async (req, res) => {
+router.get('/swiper', async (req, res) => {
   let data = await axios({
     method: 'get',
     url: 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg',
@@ -23,7 +23,7 @@ router.get('/recommend/swiper', async (req, res) => {
 })
 
 // 获取全部歌单数据
-router.get('/recommend/playlist', async (req, res) => {
+router.get('/playlist', async (req, res) => {
   let data = await axios({
     method: 'get',
     url: 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg',
