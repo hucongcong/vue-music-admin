@@ -1,9 +1,6 @@
 const express = require('express')
 const router = require('./router')
 const app = express()
-
-app.use(router)
-
 // 跨域支持
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
@@ -15,6 +12,8 @@ app.use((req, res, next) => {
   )
   next()
 })
+
+app.use(router)
 
 app.listen(3000, () => {
   console.log('app音乐服务器启动成功了')

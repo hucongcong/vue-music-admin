@@ -18,7 +18,7 @@ router.get('/recommend/swiper', async (req, res) => {
       needNewCode: 1
     }
   })
-  console.log(data.data)
+  // console.log(data.data)
   res.send(data.data)
 })
 
